@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/fffcc966dd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="zeather.css">
+  <link rel="icon" href="sun.png">
+  <title>Zeather App</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md headNav dark" id="nav">
+    <ul class="navbar-nav">
+      <li><a href="#" class="navbar-brand m-2 app" id="c">Zeather App</a></li>
+    </ul>
+
+    <div class="ml-auto">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+  </nav>
+  <div class="inner-div dark" id="main">
+    <div class="searcher">
+
+   <!-- <div class="row">
+        <div class="col-6">
+          <input type="text" id="search_bar" placeholder="Search Weather" class="form-control" style="font-size: 16px;width: 64%;">
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+        </div>
+      </div>-->
+
+      <div class="col-md-6">
+        <div class="form">
+           <i class="fa fa-search" style="margin-left: 126px;" id="z"></i>
+          <input type="text" class="form-control form-input" placeholder="Search Weather" id="search_bar" style="margin-left: 125px;width: 110%;">
+        </div>
+      </div>
+      
+     
+    <hr>
+    <hr>
+    <div class="searcher mr-2">
+      <p id="err" style="color:red;font-weight:400;"></p>
+      <p id="error" style="color:red;font-weight:400;"></p>
+      <h2 id="currentLocation"></h2>
+      
+      <hr>
+      <h3 id="degC"></h3>
+      <hr>
+      <div class="zuzu son-1 son"></div>
+
+      <div>
+        <img class="icon" id="icon" style="display: inline;"/>
+        <div class="description" id="description" style="display: inline;position: relative;top: 3px;"></div>
+      </div>
+      <hr>
+
+      <div class="humidity">
+        <h5 id="humidity"></h5>
+      </div>
+      <hr>
+      <div class="wind">
+        <h5 id="wind"></h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="row">
+      <div class="col-8">
+        <h4 class="mt-4 text-white ml-2" style="font-size: 16px;">Toggle Theme</h4>
+      </div>
+      <div class="col-4"> <button onclick="hi();" class="btn btn-primary float-right mt-4 mr-2 btn-small"
+          style="font-size: 14px;position: relative;top: -6px">Change</button></div>
+    </div>
+
+    <div class="row">
+      <div class="col-8">
+        <h4 class="mt-4 text-white ml-2" style="font-size: 16px;">Change Temp</h4>
+      </div>
+      <div class="col-2">
+         <a  class="btn float-right text-white mt-4 mr-2 btn-small" id="tmpC" style="font-size: 18px;position: relative;top: -12px;color: #f9f9f9;">F</a>
+        </div>
+        <div class="col-2">
+          <a class="btn float-right text-white mt-4 mr-2 btn-small" id="tmpF" style="font-size: 18px;position: relative;top: -12px;color: #f9f9f9;">C</a>
+         </div>
+    </div>
+
+
+  </div>
+  <script src="darkTheme.js"></script>
+  <script src="zeather.js" defer></script>
+
+</body>
+
+</html>
