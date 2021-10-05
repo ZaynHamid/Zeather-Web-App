@@ -114,13 +114,6 @@ else {
 
 }
 
-/*function searchWeather() {
-  document.getElementById("searchBtn").addEventListener("click", function () {
-    let searchBar = document.getElementById("search_bar").value;
-    fetchWeather(searchBar);
-  });
-}*/
-
 document.getElementById("search_bar").addEventListener("keypress", function (event) {
     if (event.key == "Enter") {
       let searchBar = document.getElementById("search_bar").value;
