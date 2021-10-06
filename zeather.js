@@ -12,13 +12,11 @@ function fetchWeather(city) {
       } else {
         document.getElementById("err").textContent = "";
       }
-      console.log(response)
       return response.json();
       
     })
     .then((data) => {
       displayWeather(data);
-      console.log(data)
     });
 }
 
