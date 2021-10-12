@@ -37,13 +37,13 @@ function displayWeather(data) {
   });
   
   document.getElementById("tmpF").addEventListener("click", function(){
-    document.getElementById("degC").textContent = Math.round(currentCel) + " °C";
+    document.getElementById("degC").textContent = Math.round(currentCel) + " \xB0F";
     });
   
 
   document.getElementById("currentLocation").textContent =
     "Current Weather in " + city + ", " + country;
-  document.getElementById("degC").textContent = Math.round(currentCel) + "°C";
+  document.getElementById("degC").textContent = Math.round(currentCel) + " \xB0F";
   document.getElementById("icon").src =
     "https://openweathermap.org/img/wn/" + icon + ".png";
   document.getElementById("description").textContent = desc;
