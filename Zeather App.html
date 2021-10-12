@@ -7,9 +7,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/fffcc966dd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="zeather.css">
   <link rel="icon" href="sun.png">
@@ -34,13 +31,12 @@
           <input type="text" class="form-control form-input" placeholder="Search Weather" id="search_bar" style="margin-left: 125px;width: 110%;">
         </div>
       </div>
-      
-     
+
     <hr>
     <hr>
     <div class="searcher mr-2">
-      <p id="err" style="color:red;font-weight:400;"></p>
-      <p id="error" style="color:red;font-weight:400;"></p>
+      <p id="err" class="text-danger" style="font-weight:400;"></p>
+      <p id="error" class="text-danger" style="font-weight:400;"></p>
       <h2 id="currentLocation"></h2>
       
       <hr>
@@ -88,7 +84,7 @@
 
 
   </div>
-  <script src="darkTheme.js"></script>
+  <script src="darkTheme.js" defer></script>
   <script src="zeather.js" defer></script>
 
 </body>
