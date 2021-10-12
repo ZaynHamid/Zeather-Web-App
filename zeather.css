@@ -82,6 +82,13 @@ hr {
   font-size: 20px;
 }
 
+.lun {
+  font-weight: 500;
+  color: #1d1d1f;
+  font-size: 20px;
+
+}
+
 .dark {
   background-color: #1d1d1f;
   color: #f9f9f9;
@@ -194,7 +201,7 @@ a:hover {
 }
 @media all and (max-width: 1000px) {
     #currentLocation {
-      font-size: 20px;
+      font-size: 25px;
     }
     #search_bar {
       position: relative;
@@ -204,6 +211,6 @@ a:hover {
       display: none;
     }
     #degC {
-      font-size: 27px;
+      font-size: 25px;
     }
 }
