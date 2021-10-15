@@ -139,4 +139,4 @@ searchBar.addEventListener("keypress", function (e) {
 });
 
 
-fetchWeather('Lahore'); // Pass your city name as argument so it always shows you your weather everytime you reload
+fetchWeather('Lahore'); // Pass your city name as argument so it always shows your weather everytime you reload
