@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/fffcc966dd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="zeather.css">
   <link rel="icon" href="sun.png">
@@ -15,7 +18,7 @@
 <body>
   <nav class="navbar navbar-expand-md headNav dark" id="nav">
     <ul class="navbar-nav">
-      <li><a href="#" class="navbar-brand m-2 app" id="c">Zeather Web App</a></li>
+      <li><a href="#" class="navbar-brand m-2 app" id="c">Zeather App</a></li>
     </ul>
 
     <div class="ml-auto">
@@ -42,7 +45,7 @@
       <hr>
       <h3 id="degC"></h3>
       <hr>
-      <div class="zuzu son-1 son"></div>
+      <div class="zuzu son-1 son" id="smt"></div>
 
       <div>
         <img class="icon" id="icon" style="display: inline;"/>
@@ -82,11 +85,11 @@
          </div>
     </div>
 
-
   </div>
   <script src="darkTheme.js" defer></script>
   <script src="zeather.js" defer></script>
-
+<noscript>
+Your browser does not support Zeather.
+</noscript>
 </body>
-
 </html>
